@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kepplers Planetary Orbits</title>
+  </head>
+  <body onload="selectedItem()" style="background: black">
+    <p>
+      <span style="color: aliceblue; font-size: 30px; font-weight: bold">
+        Keppler's Laws of Planetary Motion
+      </span>
+      <span style="color: aliceblue; font-weight: bolder">
+        By Nirav Sapkota CE III/II Roll no: 48
+      </span>
+    </p>
+    <select id="myList" onchange="selectedItem()">
+      <option>Select the orbits you want to see</option>
+      <option>Inner Planets</option>
+      <option>Outer Planets</option>
+      <option>Earth and Moon</option>
+      <option>Halleys Comet</option>
+    </select>
+    <span style="color: aliceblue" id="distanceFactor"></span>
+    <p align="center">
+      <canvas id="glcanvas" style="background: black"></canvas>
+    </p>
+    <br />
+
+    <script src="app.js"></script>
+  </body>
+</html>
